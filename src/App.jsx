@@ -26,22 +26,19 @@ function App() {
           <Column className="full is-three-quarters">
             Navbar
             <Row className="full has-background-warning">
-              <p>Routes</p>
+              <Wrapper>
+                <Switch>
+                  <Route exact path="/" component={About} />
+                  <Route exact path="/about" component={About} />
+                  <Route exact path="/resume" component={Resume} />
+                  <Route exact path="/projects" component={Projects} />
+                  <Route exact path="/contact" component={Contact} />
+                </Switch>
+              </Wrapper>
             </Row>
           </Column>
         </Columns>
       </Row>
-      {/* <section className="section mainContent">
-        <div className="columns full">
-          <div className="column is-one-quarter full">
-            <section className="section photo full"></section>
-          </div>
-          <div className="column is-three-quarters">
-            {/* Nav bar */}
-      {/* <Wrapper>This is the main</Wrapper>
-          </div>
-        </div>
-      </section> */}
       <Footer />
     </Router>
   );

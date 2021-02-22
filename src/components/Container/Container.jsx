@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./Container.css";
 
 const Container = (props) => {
-    return (
-        <div className="container" style={props.style}>
-            {props.children}
-        </div>
-    );
+  return (
+    <div className="container" style={props.style}>
+      {props.children}
+    </div>
+  );
 };
 
 export default Container;

@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./Row.css";
 
 const Row = (props) => {
-    return (
-        <div className="row" style={props.style}>
-            {props.children}
-        </div>
-    );
+  return (
+    <section className={`section ${props.className}`} style={props.style}>
+      {props.children}
+    </section>
+  );
 };
 
 export default Row;

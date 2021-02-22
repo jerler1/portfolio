@@ -24,3 +24,8 @@ html {
   min-height: 100 vh;
   flex-direction: column;
 }
+
+/* body {
+  background: rgba(0, 0, 0, 0.65) url(../public/images/background-image.jpg);
+  background-blend-mode: darken;
+} */

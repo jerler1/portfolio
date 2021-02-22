@@ -18,14 +18,15 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Row className="full has-background-info py-0">
+      <Row className="full has-background-info p-0">
         <Columns className="full">
-          <Column className="full is-one-quarter">
+          <Column className="full is-one-quarter px-0">
             <Row className="full photo has-background-success py-1">
-              <p>Hi</p>
+              <h1>John Erler</h1>
+              <h3>Web Developer</h3>
             </Row>
           </Column>
-          <Column className="full is-three-quarters">
+          <Column className="full is-three-quarters px-0">
             <Row className="full has-background-warning py-1">
               <Wrapper>
                 <Switch>

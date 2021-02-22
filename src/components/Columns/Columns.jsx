@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Columns = () => {
+const Columns = (props) => {
     return (
         <div className="columns" style={props.style}>
             {props.children}

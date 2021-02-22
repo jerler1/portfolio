@@ -10,24 +10,26 @@ import Navbar from "./components/Navbar/Navbar";
 import Container from "./components/Container/Container";
 import Row from "./components/Row/Row";
 import Wrapper from "./components/Wrapper/Wrapper";
-import Photo from "./components/Photo/Photo";
 import Footer from "./components/Footer/Footer";
+import Me from "./images/headShot.png";
 import "./App.css";
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Row className="full has-background-info p-0">
+      <Row className="full  p-0">
         <Columns className="full">
-          <Column className="full is-one-quarter px-0">
-            <Row className="full photo has-background-success py-1">
-              <h1>John Erler</h1>
-              <h3>Web Developer</h3>
+          <Column className="full is-one-fifth p-0">
+            <Row className="full sidebar px-0">
+              <h1 className="name">John Erler</h1>
+              <h3 className="titleJob">Web Developer</h3>
+              <img className="photo"src={Me} />
+              
             </Row>
           </Column>
-          <Column className="full is-three-quarters px-0">
-            <Row className="full has-background-warning py-1">
+          <Column className="full is-four-fifths px-0 is-clipped bg">
+            <Row className="full p-1">
+              <Navbar />
               <Wrapper>
                 <Switch>
                   <Route exact path="/" component={About} />

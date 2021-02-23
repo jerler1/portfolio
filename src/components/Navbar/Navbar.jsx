@@ -4,7 +4,6 @@ import "./Navbar.css";
 
 const Navbar = (props) => {
   const location = useLocation();
-  console.log(location);
   return (
     <div className="tabs is-centered is-fullwidth">
       <ul>

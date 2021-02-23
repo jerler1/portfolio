@@ -1,43 +1,64 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = (props) => {
+  const location = useLocation();
+  console.log(location);
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div id="navbar" className="navbar-menu">
-        <div className="navbar-start">
+    <div className="tabs is-centered is-fullwidth">
+      <ul>
+        <li>
           <Link
             to="/"
             className={
-              window.location.pathname === "/" ||
-              window.location.pathname === "/about"
-                ? "navbar-item active"
+              location.pathname === "/" ||
+              location.pathname === "/about"
+                ? "navbar-item is-active"
                 : "navbar-item"
             }
           >
             About
           </Link>
-
-          <Link to="/resume" className={
-              window.location.pathname === "/resume"
-                ? "navbar-item active"
+        </li>
+        <li>
+          <Link
+            to="/resume"
+            className={
+              location.pathname === "/resume"
+                ? "navbar-item is-active"
                 : "navbar-item"
-            }>Resume</Link>
-          <Link to="/portfolio" className={
-              window.location.pathname === "/portfolio"
-                ? "navbar-item active"
+            }
+          >
+            Resume
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/portfolio"
+            className={
+              location.pathname === "/portfolio"
+                ? "navbar-item is-active"
                 : "navbar-item"
-            }>Portfolio</Link>
-          <Link to="/contact" className={
-              window.location.pathname === "/contact"
-                ? "navbar-item active"
+            }
+          >
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/contact"
+            className={
+              location.hash === "/contact"
+                ? "navbar-item is-active"
                 : "navbar-item"
-            }>Contact</Link>
-        </div>
-
-      </div>
-    </nav>
+            }
+          >
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </div>
   );
 };
 

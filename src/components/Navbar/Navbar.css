@@ -1,44 +1,6 @@
-/* import React from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
-
-const Navbar = (props) => {
-  return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div id="navbar" className="navbar-menu">
-        <div className="navbar-start">
-          <Link
-            to="/"
-            className={
-              window.location.pathname === "/" ||
-              window.location.pathname === "/about"
-                ? "navbar-item active"
-                : "navbar-item"
-            }
-          >
-            About
-          </Link>
-
-          <Link to="/resume" className={
-              window.location.pathname === "/resume"
-                ? "navbar-item active"
-                : "navbar-item"
-            }>Resume</Link>
-          <Link to="/portfolio" className={
-              window.location.pathname === "/portfolio"
-                ? "navbar-item active"
-                : "navbar-item"
-            }>Portfolio</Link>
-          <Link to="/contact" className={
-              window.location.pathname === "/contact"
-                ? "navbar-item active"
-                : "navbar-item"
-            }>Contact</Link>
-        </div>
-
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar; */
+.navbar-item {
+    background-color: rgb(119, 56, 56) !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    color:rgb(145, 177, 226) !important;
+}

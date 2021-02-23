@@ -44,18 +44,6 @@ const Navbar = (props) => {
             Portfolio
           </Link>
         </li>
-        <li>
-          <Link
-            to="/contact"
-            className={
-              location.hash === "/contact"
-                ? "navbar-item is-active"
-                : "navbar-item"
-            }
-          >
-            Contact
-          </Link>
-        </li>
       </ul>
     </div>
   );

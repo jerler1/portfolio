@@ -19,12 +19,17 @@ function App() {
     <Router>
       <Row className="full  p-0">
         <Columns className="full">
-          <Column className="full is-one-fifth p-0">
+          <Column className="full is-one-fifth p-0 is-clipped">
             <Row className="full sidebar px-0">
               <h1 className="name">John Erler</h1>
               <h3 className="titleJob">Web Developer</h3>
-              <img className="photo"src={Me} />
-              
+              <img className="photo" src={Me} />
+              <a className="icons" href="https://www.linkedin.com/in/john-erler/">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a className="icons" href="https://github.com/jerler1">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
             </Row>
           </Column>
           <Column className="full is-four-fifths px-0 is-clipped bg">

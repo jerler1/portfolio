@@ -45,16 +45,6 @@ const Photo = (props) => {
             ></a>
           </span>
         </div>
-        <div class="detail">
-          <span class="icon">
-            <i class="icon fs-lg icon-link"></i>
-          </span>
-          <span class="info">
-            <a href="https://www.castaldi.dev" target="_blank">
-              https://www.castaldi.dev
-            </a>
-          </span>
-        </div>
       </div>
     </div>
   );

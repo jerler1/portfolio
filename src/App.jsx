@@ -6,12 +6,12 @@ import Portfolio from "./pages/Projects/Portfolio";
 import Resume from "./pages/Resume/Resume";
 import Column from "./components/Column/Column";
 import Columns from "./components/Columns/Columns";
+import Photo from "./components/Photo/Photo";
 import Navbar from "./components/Navbar/Navbar";
 import Container from "./components/Container/Container";
 import Row from "./components/Row/Row";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Footer from "./components/Footer/Footer";
-import Me from "./images/headShot.png";
 import "./App.css";
 
 function App() {
@@ -20,16 +20,8 @@ function App() {
       <Row className="full  p-0">
         <Columns className="full">
           <Column className="full is-one-fifth p-0 is-clipped">
-            <Row className="full sidebar px-0">
-              <h1 className="name">John Erler</h1>
-              <h3 className="titleJob">Web Developer</h3>
-              <img className="photo" src={Me} />
-              <a className="icons" href="https://www.linkedin.com/in/john-erler/">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-              </a>
-              <a className="icons" href="https://github.com/jerler1">
-                <i class="fab fa-github" aria-hidden="true"></i>
-              </a>
+            <Row className="full sidebar px-0 personalDetails">
+              <Photo />
             </Row>
           </Column>
           <Column className="full is-four-fifths px-0 is-clipped bg">

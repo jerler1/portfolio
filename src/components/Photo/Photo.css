@@ -20,8 +20,8 @@
   }
 
   .sidebar {
-    background-color: rgb(119, 56, 56);
-    color: rgb(145, 177, 226);
+    background-color: rgb(119, 56, 56) !important;
+    color: rgb(145, 177, 226) !important;
     text-align: center;
     min-height: 100%;
     padding: 100px, 20px, 100px, 20px;
@@ -32,4 +32,9 @@
     padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 100%;
+  }
+
+  .welcome {
+    background-color: burlywood;
   }

@@ -7,7 +7,7 @@ const About = () => {
       <div class="tile is-ancestor centerTile">
         <div class="tile is-vertical is-8">
           <div class="tile is-parent">
-            <article class="tile is-child">
+            <article class="tile is-child welcome">
               <p class="title">Welcome to My Portfolio</p>
               <p class="subtitle">Aligned with the right tile</p>
               <div class="content">

@@ -22,3 +22,7 @@ section.personalDetails a i {
     justify-content: center;
     margin-top: 40px !important;
 }
+
+.aboutMeTile {
+  padding: 50px, 0px, 50px, 0px !important;
+}

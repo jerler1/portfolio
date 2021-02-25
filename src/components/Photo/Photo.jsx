@@ -19,13 +19,13 @@ const Photo = (props) => {
       </a>
       <img className="photo" src={Me} />
       <div class="contact-details clearfix">
-        <div class="detail">
+        <div class="detail titleJob">
           <span class="icon">
             <i class="icon fs-lg icon-location"></i>
           </span>
-          <span class="info">Atlanta, Georgia, US</span>
+          <span class="info">Atlanta, Georgia</span>
         </div>
-        <div class="detail">
+        <div class="detail titleJob">
           <span class="icon">
             <i class="icon fs-lg icon-phone"></i>
           </span>

@@ -20,7 +20,7 @@ const Navbar = (props) => {
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="/resume"
             className={
@@ -31,7 +31,7 @@ const Navbar = (props) => {
           >
             Resume
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             to="/portfolio"

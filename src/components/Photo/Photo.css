@@ -1,40 +1,58 @@
-.name {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1.1em;
-  }
-  
-  .titleJob {
-    font-size: 18px;
-    font-weight: 300;
-  }
-  
-  .icons {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    color: #888;
-    background-color: #eee;
-    text-align: center;
-    margin: 0 2px;
-  }
+.mainHeading {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1em;
+}
 
+.subHeading {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.resume {
+  display: inline-block;
+}
+
+.icons {
+  display: inline-block;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 30px;
+}
+
+.sidebar {
+  background-color: #0d0221 !important;
+  color: #a6cfd5 !important;
+  text-align: center;
+  min-height: 100%;
+  padding: 100px, 20px, 100px, 20px;
+}
+
+.photo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.welcome {
+  background-color: burlywood;
+}
+
+.socialIcons {
+  font-size: 30px;
+  height: 50px;
+  width: auto;
+}
+
+.socialIcons:hover {
+  transform:scale(1.2);
+  color: #fff;
+}
+
+/* @media only screen and (max-width: 768px) {
   .sidebar {
-    background-color: rgb(119, 56, 56) !important;
-    color: rgb(145, 177, 226) !important;
-    text-align: center;
-    min-height: 100%;
-    padding: 100px, 20px, 100px, 20px;
+    display: none;
   }
-
-  .photo {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 100%;
-  }
-
-  .welcome {
-    background-color: burlywood;
-  }
+} */

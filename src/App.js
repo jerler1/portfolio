@@ -17,30 +17,16 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Row className="full  p-0">
-        <Columns className="full">
-          <Column className="full is-one-fifth p-0 is-clipped">
-            <Row className="full sidebar px-0 personalDetails">
-              <Photo />
-            </Row>
-          </Column>
-          <Column className="full is-four-fifths px-0 is-clipped bg">
-            <Row className="full p-1">
-              <Navbar />
-              <Wrapper>
-                <Switch>
-                  <Route exact path="/" component={About} />
-                  <Route exact path="/about" component={About} />
-                  <Route exact path="/resume" component={Resume} />
-                  <Route exact path="/portfolio" component={Portfolio} />
-                  <Route exact path="/contact" component={Contact} />
-                </Switch>
-              </Wrapper>
-            </Row>
-          </Column>
-        </Columns>
-      </Row>
-      <Footer />
+      <Wrapper>
+        <Switch>
+          <Navbar />
+          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+      </Wrapper>
     </Router>
   );
 }

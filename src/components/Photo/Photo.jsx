@@ -1,6 +1,6 @@
 import React from "react";
 import "./Photo.css";
-import Me from "../../assets/images/headShot.png";
+import { headShot as Me, github, linkedIn} from "../../assets/";
 
 
 const Photo = (props) => {
@@ -27,13 +27,13 @@ const Photo = (props) => {
         >
           <img
             className="socialIcons"
-            src="../../assets/images/daycalender.png"
+            src={linkedIn}
           ></img>
         </a>
         <a className="icons" href="https://github.com/jerler1" target="_blank">
           <img
             className="socialIcons"
-            src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg"
+            src={github}
           />
         </a>
         <div className=""></div>

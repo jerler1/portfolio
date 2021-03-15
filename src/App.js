@@ -16,9 +16,9 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router> 
       <Navbar />
-      <Wrapper>
+      <Wrapper className="has-navbar-fixed-top">
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />

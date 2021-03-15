@@ -1,6 +1,7 @@
 import React from "react";
 import "./Photo.css";
-import Me from "../../images/headShot.png";
+import Me from "../../assets/images/headShot.png";
+
 
 const Photo = (props) => {
   return (
@@ -26,7 +27,7 @@ const Photo = (props) => {
         >
           <img
             className="socialIcons"
-            src="https://www.flaticon.com/svg/vstatic/svg/61/61109.svg?token=exp=1614749652~hmac=0edb1ca47918f069bbb259953e937975"
+            src="../../assets/images/daycalender.png"
           ></img>
         </a>
         <a className="icons" href="https://github.com/jerler1" target="_blank">

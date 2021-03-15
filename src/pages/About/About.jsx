@@ -4,20 +4,20 @@ import Container from "../../components/Container/Container";
 const About = () => {
   return (
     <Container>
-      <div class="tile is-ancestor centerTile">
-        <div class="tile is-vertical is-8">
-          <div class="tile is-parent aboutMeTile">
-            <article class="tile is-child welcome  has-text-centered">
-              <p class="title is-size-3">Hi There, I am</p>
-              <p class="title is-size-3">John Erler</p>
-              <p class="title is-size-3">Welcome to My Portfolio</p>
+      <div className="tile is-ancestor centerTile">
+        <div className="tile is-vertical is-8">
+          <div className="tile is-parent aboutMeTile">
+            <article className="tile is-child welcome  has-text-centered">
+              <p className="title is-size-3">Hi There, I am</p>
+              <p className="title is-size-3">John Erler</p>
+              <p className="title is-size-3">Welcome to My Portfolio</p>
             </article>
           </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-danger">
-              <p class="title">About Me</p>
+          <div className="tile is-parent">
+            <article className="tile is-child notification is-danger">
+              <p className="title">About Me</p>
 
-              <div class="content">
+              <div className="content">
                 I am a software engineer with experience in Javascript, but with
                 an interest in Python and C++. Recently earned a certificate in
                 full stack development from Georgia Tech, with skill refinement

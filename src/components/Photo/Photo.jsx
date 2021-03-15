@@ -9,7 +9,7 @@ const Photo = (props) => {
       <h3 className="subHeading">Full Stack Web Developer</h3>
       <div className="card-image">
         <figure>
-          <img className="photo" src={Me} />
+          <img className="photo" src={Me} width="200px"/>
         </figure>
       </div>
       <div className="container info-box has-background-info-light has-text-black">

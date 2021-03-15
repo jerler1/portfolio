@@ -34,6 +34,7 @@
 .photo {
   margin-top: 50px;
   margin-bottom: 50px;
+  border-radius: 50% !important;
 }
 
 .welcome {

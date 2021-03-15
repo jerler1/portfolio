@@ -3,9 +3,9 @@ import Container from "../../components/Container/Container";
 
 const About = () => {
   return (
-    <Container>
-
-    </Container>
+    <div id="mainContainer" className="container">
+      hi
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ import "./Container.css";
 
 const Container = (props) => {
   return (
-    <div className="container" style={props.style}>
+    <div className="container" id={props.id} style={props.style}>
       {props.children}
     </div>
   );

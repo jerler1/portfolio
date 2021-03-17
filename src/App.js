@@ -16,8 +16,9 @@ import "./App.css";
 
 function App() {
   return (
-    <Router> 
+    <Router>
       <Navbar />
+
       <Wrapper>
         <Switch>
           <Route exact path="/" component={About} />

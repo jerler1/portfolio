@@ -5,7 +5,7 @@ import { headShot as Me, github, linkedIn} from "../../assets/";
 
 const Photo = (props) => {
   return (
-    <div className="card sidebar">
+    <div className="sidebar"> 
       <h1 className="mainHeading">John Erler</h1>
       <h3 className="subHeading">Full Stack Web Developer</h3>
       <div className="card-image">

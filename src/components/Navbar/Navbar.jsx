@@ -32,7 +32,7 @@ const Navbar = (props) => {
           </a>
         </figure>
 
-        <div className={toggleBurger ? "navbar-menu is-active" : "navbar-menu"}>
+        <div className={toggleBurger ? "navbar-menu is-active mr-1" : "navbar-menu mr-1"}>
           <ul className="navbar-end">
             <li
               className={

@@ -26,8 +26,22 @@
   position: relative;
 }
 .navbar .navbar-end .active a {
-  color: rgb(232, 93, 4) !important;
+  color:rgb(145, 177, 226) !important;
+  position: relative;
+  text-decoration: none;
 }
+.navbar .navbar-end .active a:after {
+  content: "";
+  width: 100% !important;
+  position: absolute !important;
+  display: block !important;
+  left: 0 !important;
+  bottom: 1px  !important;
+  color: rgb(145, 177, 226) !important;
+  border-width: 0 0 1px !important;
+  border-style: solid !important;
+}
+
 .navbar .navbar-end .navbar-item a:hover {
   color: rgb(232, 93, 4);
 }

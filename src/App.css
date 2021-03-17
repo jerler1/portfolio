@@ -3,15 +3,3 @@
   min-height: 100%;
 }
 
-.mainContainer {
-  background: white !important;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  background: transparent;
-  border-radius: 20px;
-}
-
-.mainCard {
-  background-color: transparent !important;
-}

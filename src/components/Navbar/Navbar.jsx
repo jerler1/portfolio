@@ -13,7 +13,7 @@ const Navbar = (props) => {
   return (
     <nav className="navbar py-4" role="navigation" aria-label="main navigation">
       <div className="container">
-        <figure className="navbar-brand is-size-3 logo">
+        <figure className="navbar-brand is-size-3 logo ml-1">
           <Link to="/" className="navbar-item">
             John <span className="ml-2 lastName">Erler</span>
           </Link>

@@ -1,5 +1,5 @@
 .navbar {
-  background-color: white !important;
+  background-color: transparent !important;
   position: sticky;
   top: 0;
   left: 0;
@@ -11,12 +11,13 @@
   color: rgb(232, 93, 4) !important;
 }
 
-.logo {
+.logo .navbar-item {
   font-family: Merriweather;
+
 }
 
 .navbar .navbar-end .navbar-item a {
-  color: black;
+  color: rgb(232, 93, 4);
   font-weight: 700 !important;
   text-transform: uppercase;
   text-decoration: none;
@@ -39,7 +40,7 @@
   height: 2px;
   left: 50%;
   position: absolute;
-  background: black;
+  background: rgb(232, 93, 4);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

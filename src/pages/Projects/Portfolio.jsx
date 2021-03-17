@@ -1,10 +1,12 @@
 import React from "react";
 import Projects from "../../components/Projects/Projects";
 import Works from "./ProjectInfo";
+import CardHeader from "../../components/CardHeader/CardHeader";
 
 const Portfolio = () => {
   return (
-    <div>
+    <>
+      <CardHeader headingName="Portfolio"/>
       <section className="section">Here are some of my best projects!</section>
       <div className="container">
         <div className="box">
@@ -31,7 +33,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

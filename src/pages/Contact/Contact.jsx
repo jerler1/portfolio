@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import CardHeader from "../../components/CardHeader/CardHeader";
 
 const Contact = () => {
-    return (
-        <div>
-            This is my Contact.
-        </div>
-    );
+  return (
+    <>
+    <CardHeader headingName="Contact"/>
+      <div>This is my Contact.</div>
+    </>
+  );
 };
 
 export default Contact;

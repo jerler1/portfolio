@@ -1,9 +1,50 @@
 .navbar {
-  background-color: transparent !important;
-  position: absolute;
+  background-color: white !important;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   color: rgb(145, 177, 226) !important;
+}
+
+.lastName {
+  color: rgb(232, 93, 4) !important;
+}
+
+.logo {
+  font-family: Merriweather;
+}
+
+.navbar .navbar-end .navbar-item a {
+  color: black;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding: 15px 20px;
+  position: relative;
+}
+.navbar .navbar-end .active a {
+  color: rgb(232, 93, 4) !important;
+}
+.navbar .navbar-end .navbar-item a:hover {
+  color: rgb(232, 93, 4);
+}
+
+.navbar .navbar-end .navbar-item a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar .navbar-end .navbar-item a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 

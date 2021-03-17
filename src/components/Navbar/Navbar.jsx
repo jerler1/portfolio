@@ -9,21 +9,14 @@ const Navbar = (props) => {
   const handleBurger = () => {
     setToggleBurger(!toggleBurger);
   };
+  console.log(location.pathname);
   return (
-    <nav
-      className="navbar py-4 is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
+    <nav className="navbar py-4" role="navigation" aria-label="main navigation">
       <div className="container">
-        <figure className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              width="112"
-              height="28"
-            />
-          </a>
+        <figure className="navbar-brand is-size-3 logo">
+          <Link to="/" className="navbar-item">
+            John <span className="ml-2 lastName">Erler</span>
+          </Link>
 
           <a
             role="button"
@@ -39,33 +32,43 @@ const Navbar = (props) => {
           </a>
         </figure>
 
-        <div
-          id="navbarBasicExample"
-          className={toggleBurger ? "navbar-menu is-active" : "navbar-menu"}
-        >
-          <div className="navbar-start">
-            <a className="navbar-item">Home</a>
-
-            <a className="navbar-item">Documentation</a>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">More</a>
-
-              <div className="navbar-dropdown">
-                <a className="navbar-item">About</a>
-                <a className="navbar-item">Jobs</a>
-
-                <hr className="navbar-divider" />
-                <a className="navbar-item">Report an issue</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <a className="navbar-item">Contact</a>
-            </div>
-          </div>
+        <div className={toggleBurger ? "navbar-menu is-active" : "navbar-menu"}>
+          <ul className="navbar-end">
+            <li
+              className={
+                location.pathname === "/" ? "navbar-item active" : "navbar-item"
+              }
+            >
+              <Link to="/">Home</Link>
+            </li>
+            <li
+              className={
+                location.pathname === "/resume"
+                  ? "navbar-item active"
+                  : "navbar-item"
+              }
+            >
+              <Link to="/resume">Resume</Link>
+            </li>
+            <li
+              className={
+                location.pathname === "/portfolio"
+                  ? "navbar-item active"
+                  : "navbar-item"
+              }
+            >
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li
+              className={
+                location.pathname === "/contact"
+                  ? "navbar-item active"
+                  : "navbar-item"
+              }
+            >
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

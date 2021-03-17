@@ -18,7 +18,7 @@ function App() {
   return (
     <Router> 
       <Navbar />
-      <Wrapper className="has-navbar-fixed-top">
+      <Wrapper>
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />

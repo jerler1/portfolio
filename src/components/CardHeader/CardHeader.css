@@ -1,5 +1,5 @@
 .cardHeader {
-    background: rgba(232,93,4, 0.3) url(../../assets/images/header.jpg) !important;
+    background: rgba(1, 11, 51, 0.7) url(../../assets/images/header.jpg) !important;
     background-blend-mode: darken;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -12,6 +12,4 @@
   .headerText {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: center !important;
   }

@@ -1,43 +1,45 @@
 import React from "react";
 import "./Photo.css";
-import { headShot as Me, github, linkedIn} from "../../assets/";
-
+import { headShot as Me, github, linkedIn } from "../../assets/";
 
 const Photo = (props) => {
   return (
-    <div className="sidebar"> 
-      <h1 className="mainHeading">John Erler</h1>
-      <h3 className="subHeading">Full Stack Web Developer</h3>
-      <div className="card-image">
-        <figure>
-          <img className="photo" src={Me} width="200px"/>
-        </figure>
+    <div className="columns">
+      <div className="column is-one-half">
+        <div className="card-image">
+          <figure className="has-text-centered">
+            <img
+              className="photo m-5"
+              src={Me}
+              alt="John Erler"
+              width="300px"
+            />
+          </figure>
+        </div>
       </div>
-      <div className="container info-box has-background-info-light has-text-black">
-        <h2 className="mainHeading">Contact Me</h2>
-        <ul className="subHeading">
-          <li>404-310-9828</li>
-          <li>jerler.dev@gmail.com</li>
-          <li>Atlanta, Georgia</li>
-        </ul>
-        <a
-          className="icons"
-          href="https://www.linkedin.com/in/john-erler/"
-          target="_blank"
-        >
-          <img
-            className="socialIcons"
-            src={linkedIn}
-          ></img>
-        </a>
-        <a className="icons" href="https://github.com/jerler1" target="_blank">
-          <img
-            className="socialIcons"
-            src={github}
-          />
-        </a>
-        <div className=""></div>
-        <a className="button resume">Resume</a>
+      <div className="column is-one-half m-5">
+        <div className="info">
+          <h1 className="title is-1">John Erler</h1>
+          <h1 className="subtitle is-3 mb-0">Full Stack Web Developer</h1>
+          <h1 className="subtitle is-4">Atlanta, Georgia</h1>
+          <a
+            className="icons"
+            href="https://www.linkedin.com/in/john-erler/"
+            target="_blank"
+          >
+            <i className="socialIcons fab fa-linkedin"></i>
+          </a>
+          <a
+            className="icons"
+            href="https://github.com/jerler1"
+            target="_blank"
+          >
+            <i className="socialIcons fab fa-github"></i>
+          </a>
+          <a className="icons" href="mailto:jerler.dev@gmail.com">
+            <i className="socialIcons fas fa-envelope-square"></i>
+          </a>
+        </div>
       </div>
     </div>
   );

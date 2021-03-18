@@ -1,4 +1,4 @@
-.mainHeading {
+/* .mainHeading {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.1em;
@@ -31,29 +31,32 @@
   padding: 100px, 20px, 100px, 20px;
 }
 
-.photo {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 50% !important;
-}
-
-.welcome {
-  background-color: burlywood;
-}
-
+ */
 .socialIcons {
-  font-size: 30px;
-  height: 50px;
+  font-size: 80px;
+  height: 80px;
   width: auto;
+  margin: 10px;
+  color: white;
 }
 
 .socialIcons:hover {
-  transform:scale(1.2);
-  color: #fff;
+  color: rgb(198, 46, 66);
 }
 
-/* @media only screen and (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-} */
+
+.mainHeader {
+  width: 100%;
+}
+
+.info {
+  text-align: center;
+}
+.info h1 {
+  color: rgb(232, 93, 4);
+  font-weight: 700;
+}
+.photo {
+  text-align: center !important;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 100%)
+}

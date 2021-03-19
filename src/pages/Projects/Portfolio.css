@@ -1,0 +1,19 @@
+.gridContainer {
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gridContainer .column figure img {
+    border-radius: 15px;
+    border: 1px black solid;
+    height: 280px;
+    width: auto;
+}
+
+.gridContainer .column figcaption {
+    text-align: center;
+    font-family: 'Merriweather', serif !important;
+    font-weight: 900;
+}

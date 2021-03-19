@@ -4,21 +4,15 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Portfolio from "./pages/Projects/Portfolio";
 import Resume from "./pages/Resume/Resume";
-import Column from "./components/Column/Column";
-import Columns from "./components/Columns/Columns";
 import Photo from "./components/Photo/Photo";
 import Navbar from "./components/Navbar/Navbar";
-import Container from "./components/Container/Container";
-import Row from "./components/Row/Row";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Footer from "./components/Footer/Footer";
-import "./App.css";
 
 function App() {
   return (
     <Router>
       <Navbar />
-
       <Wrapper>
         <Switch>
           <Route exact path="/" component={About} />

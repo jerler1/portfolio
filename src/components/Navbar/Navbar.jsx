@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import resume from "../../assets/Main_Resume.pdf"
 import "./Navbar.css";
 
 const Navbar = (props) => {
@@ -48,7 +49,7 @@ const Navbar = (props) => {
                   : "navbar-item"
               }
             >
-              <Link to="/resume">Resume</Link>
+              <a href={resume} target="_blank" rel="noreferrer">Resume</a>
             </li>
             <li
               className={

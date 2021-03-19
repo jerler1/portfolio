@@ -31,7 +31,7 @@ const About = () => {
           <h1 className="my-3 aboutHeaders is-size-5">My <span >Fundamentals</span></h1>
           <div className="skillIcons is-flex">
             {skills.map((icon) => {
-              return <figure>{icon.icon}</figure>;
+              return <div className="iconDiv"><figure>{icon.icon}</figure><p className="subtitle is-6 iconSubtitle">{icon.title}</p></div>;
             })}
           </div>
           <div>

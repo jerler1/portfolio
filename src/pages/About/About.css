@@ -6,7 +6,6 @@
   }
   
   .skillIcons svg {
-    margin: 5px;
     width: 60px;
     height: 60px;
   }
@@ -18,3 +17,9 @@
   .spanHeader {
       color: rgb(232, 93, 4);
   }
+
+  .iconDiv {
+    position: relative;
+    margin: 5px;
+  }
+

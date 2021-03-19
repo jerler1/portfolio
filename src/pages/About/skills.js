@@ -8,7 +8,7 @@ const skills = [
         ></path>
       </svg>
     ),
-    title: "Amazon Web Services",
+    title: "AWS",
   },
   {
     icon: (

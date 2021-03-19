@@ -3,15 +3,3 @@
   min-height: 100%;
 }
 
-.skillIcons {
-  padding: 5px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap:wrap;
-}
-
-.skillIcons svg {
-  margin: 5px;
-  width: 60px;
-  height: 60px;
-}

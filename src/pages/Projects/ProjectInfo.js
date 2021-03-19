@@ -6,7 +6,7 @@ module.exports = [
     url: "https://cobalt-canvas.herokuapp.com/",
     github: "https://github.com/jerler1/Cobalt",
     image: require("../../assets/images/Cobalt.png").default,
-    alt: "Picture of Cobalt Canvas Landing Page.",
+    alt: "Cobalt Canvas Landing Page.",
     id: "1",
   },
   {
@@ -16,7 +16,7 @@ module.exports = [
     url: "https://www.castaldi.dev/project1-picky/",
     github: "https://github.com/jerler1/Picky",
     image: require("../../assets/images/Picky.png").default,
-    alt: "Picture of Picky Landing Page.",
+    alt: "Picky Landing Page.",
     id: "2",
   },
   {
@@ -26,7 +26,7 @@ module.exports = [
     url: "https://jerler1.github.io/Employee-Directory/",
     github: "https://github.com/jerler1/Employee-Directory",
     image: require("../../assets/images/EmployeeDirectory.png").default,
-    alt: "Picture of a chart of employees",
+    alt: "Chart of employees",
     id: "3",
   },
   {
@@ -36,7 +36,7 @@ module.exports = [
     url: "https://jerler1.github.io/WeatherSearch/",
     github: "https://github.com/jerler1/WeatherSearch",
     image: require("../../assets/images/weather.png").default,
-    alt: "picture of a weather dashboard.",
+    alt: "Weather Dashboard.",
     id: "4",
   },
   {
@@ -58,7 +58,7 @@ module.exports = [
     url: "https://jerler1.github.io/dayplanner/",
     github: "https://github.com/jerler1/dayplanner",
     image: require("../../assets/images/daycalender.png").default,
-    alt: "Picture of Day Calender app.",
+    alt: "Day Calender.",
     id: "6",
   },
 ];

@@ -13,26 +13,25 @@ const About = () => {
       </CardHeader>
       <div className="columns p-5">
         <section className="column">
-          <h1 className="my-3 has-text-centered aboutHeaders is-size-5">
+          <header className="my-3 has-text-centered aboutHeaders is-size-5">
             About <span className="spanHeader">Me</span>
-          </h1>
-          <p className="my-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus velit libero unde. Nobis consequatur magni repellat
-            quasi et impedit fugiat voluptatum quae quam tempora atque natus
-            voluptates, expedita pariatur temporibus!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            temporibus dicta ullam, in facilis eos impedit distinctio? Similique
-            hic ad, quas maiores vero nam deserunt quisquam tenetur animi, magni
-            libero!
-          </p>
+          </header>
+          <article className="my-3">
+            At some point in your life you realize this isn't enough.  Y
+            Have you ever just stopped and thought, "Hey, this career isn't providing enough for me."
+            I am a full-stack web developer in Atlanta who recently completed a certificate in Full-Stack Web Development at Georgia Tech.  I am transistioning from a career of chemistry of 13 years to pursue this.
+          </article>
+          <article>
+            My background in chemistry is a definite asset when it comes to learning new technologies and solving puzzles.
+          </article>
+          <article>
+
+          </article>
         </section>
         <section className="column has-text-centered">
-          <h1 className="my-3 aboutHeaders is-size-5">
+          <header className="my-3 aboutHeaders is-size-5">
             My <span className="spanHeader">Fundamentals</span>
-          </h1>
+          </header>
           <div className="skillIcons is-flex">
             {skills.map((icon, index) => {
               return (

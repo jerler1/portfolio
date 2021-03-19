@@ -34,9 +34,9 @@ const About = () => {
             My <span className="spanHeader">Fundamentals</span>
           </h1>
           <div className="skillIcons is-flex">
-            {skills.map((icon) => {
+            {skills.map((icon, index) => {
               return (
-                <div className="iconDiv">
+                <div className="iconDiv" key={index}>
                   <figure>{icon.icon}</figure>
                   <p className="subtitle is-6 iconSubtitle">{icon.title}</p>
                 </div>
@@ -47,7 +47,7 @@ const About = () => {
             <a href={resume} target="_blank" className="button is-info mt-3 resumeButton">
               <span>Download Resume</span>
               <span>
-              <i class="fas fa-file-export"></i>
+              <i className="fas fa-file-export"></i>
               </span>
             </a>
           </div>

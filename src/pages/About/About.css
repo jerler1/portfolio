@@ -23,3 +23,11 @@
     margin: 5px;
   }
 
+  .resumeButton {
+    box-shadow: 0 12px 20px rgba(0,0,0,.35) !important;
+    font-weight: 600;
+  }
+
+  .resumeButton span {
+    margin: 5px;
+  }

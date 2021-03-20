@@ -1,10 +1,27 @@
-import { EmailJSResponseStatus } from "emailjs-com";
 import React from "react";
+import emailjs, { init } from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 import { useForm } from "react-hook-form";
 import CardHeader from "../../components/CardHeader/CardHeader";
 
 const Contact = () => {
   const { register, errors, handleSubmit, reset } = useForm();
+
+  init("user_LGZm9i6U1A9er0Nmm9DWo");
+
+  const toastifySuccess = () => {
+    toast.success("Form sent!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: "submit-feedback success",
+      toastId: "notifyToast",
+    });
+  };
 
   const onSubmit = async (data) => {
     try {
@@ -16,12 +33,12 @@ const Contact = () => {
       };
 
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        "service_cf1btnh",
+        "template_2d8vzku",
         templateParams,
-        process.env.REACT_APP_USER_ID
       );
       reset();
+      toastifySuccess();
     } catch (error) {
       console.log(error);
     }
@@ -167,6 +184,7 @@ const Contact = () => {
         </div>
         <div className="column"></div>
       </div>
+      <ToastContainer/>
       );
     </>
   );

@@ -1,3 +1,4 @@
+import { EmailJSResponseStatus } from "emailjs-com";
 import React from "react";
 import { useForm } from "react-hook-form";
 import CardHeader from "../../components/CardHeader/CardHeader";
@@ -5,9 +6,26 @@ import CardHeader from "../../components/CardHeader/CardHeader";
 const Contact = () => {
   const { register, errors, handleSubmit, reset } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
-  }
+  const onSubmit = async (data) => {
+    try {
+      const templateParams = {
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      };
+
+      await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_USER_ID
+      );
+      reset();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <>
@@ -119,12 +137,16 @@ const Contact = () => {
                         className="textarea"
                         name="message"
                         ref={register({
-                          required: true
+                          required: true,
                         })}
                         placeholder="Inquiry"
                       ></textarea>
                     </div>
-                    {errors.message && <span className='help is-danger errorMessage'>Please enter a message</span>}
+                    {errors.message && (
+                      <span className="help is-danger errorMessage">
+                        Please enter a message
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>

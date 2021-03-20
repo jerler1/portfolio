@@ -8,12 +8,17 @@
 .gridContainer .column figure img {
     border-radius: 15px;
     border: 1px black solid;
-    height: 280px;
-    width: auto;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .gridContainer .column figcaption {
     text-align: center;
     font-family: 'Merriweather', serif !important;
+    font-weight: 900;
+}
+
+.portfolioHeader {
     font-weight: 900;
 }

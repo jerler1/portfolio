@@ -13,7 +13,7 @@ const About = () => {
       </CardHeader>
       <div className="columns p-5">
         <section className="column">
-          <header className="my-3 has-text-centered aboutHeaders is-size-4">
+          <header className="my-3 has-text-centered aboutHeaders is-size-4 is-size-3-mobile">
             About <span className="spanHeader">Me</span>
           </header>
           <article className="my-3">
@@ -28,7 +28,7 @@ const About = () => {
           </article>
         </section>
         <section className="column has-text-centered">
-          <header className="my-3 aboutHeaders is-size-4">
+          <header className="my-3 aboutHeaders is-size-4 is-size-3-mobile">
             My <span className="spanHeader">Fundamentals</span>
           </header>
           <div className="skillIcons is-flex">

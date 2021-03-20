@@ -31,3 +31,9 @@
   .resumeButton span {
     margin: 5px;
   }
+
+  .iconSubtitle {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1rem;
+  }

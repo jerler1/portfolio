@@ -37,7 +37,7 @@ const About = () => {
               return (
                 <div className="iconDiv" key={index}>
                   <figure>{icon.icon}</figure>
-                  <p className="subtitle is-6 iconSubtitle">{icon.title}</p>
+                  <figcaption className="iconSubtitle has-text-weight-semibold">{icon.title}</figcaption>
                 </div>
               );
             })}

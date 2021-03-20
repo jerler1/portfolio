@@ -13,12 +13,11 @@ const About = () => {
       </CardHeader>
       <div className="columns p-5">
         <section className="column">
-          <header className="my-3 has-text-centered aboutHeaders is-size-5">
+          <header className="my-3 has-text-centered aboutHeaders is-size-4">
             About <span className="spanHeader">Me</span>
           </header>
           <article className="my-3">
-            At some point in your life you realize this isn't enough.  Y
-            Have you ever just stopped and thought, "Hey, this career isn't providing enough for me."
+
             I am a full-stack web developer in Atlanta who recently completed a certificate in Full-Stack Web Development at Georgia Tech.  I am transistioning from a career of chemistry of 13 years to pursue this.
           </article>
           <article>
@@ -29,7 +28,7 @@ const About = () => {
           </article>
         </section>
         <section className="column has-text-centered">
-          <header className="my-3 aboutHeaders is-size-5">
+          <header className="my-3 aboutHeaders is-size-4">
             My <span className="spanHeader">Fundamentals</span>
           </header>
           <div className="skillIcons is-flex">

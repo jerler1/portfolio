@@ -10,7 +10,6 @@ const Navbar = (props) => {
   const handleBurger = () => {
     setToggleBurger(!toggleBurger);
   };
-  console.log(location.pathname);
   return (
     <nav className="navbar py-4" role="navigation" aria-label="main navigation">
       <div className="container">

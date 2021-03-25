@@ -17,7 +17,6 @@ const About = () => {
             About <span className="spanHeader">Me</span>
           </header>
           <article className="my-3">
-
             I am a full-stack web developer in Atlanta who recently completed a certificate in Full-Stack Web Development at Georgia Tech.  I am transistioning from a career of chemistry of 13 years to pursue a career in web development.
           </article>
           <article>
@@ -45,7 +44,7 @@ const About = () => {
             })}
           </div>
           <div>
-            <a href={resume} target="_blank" className="button is-info mt-3 resumeButton">
+            <a href={resume} target="_blank" className="button mt-3 resumeButton">
               <span>Download Resume</span>
               <span>
               <i className="fas fa-file-export"></i>

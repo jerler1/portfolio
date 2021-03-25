@@ -1,0 +1,22 @@
+#contact-form input,
+#contact-form textarea {
+  border-radius: 20px;
+  border-color: black;
+}
+.gradientButton {
+  text-transform: uppercase;
+  color: white;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35) !important;
+  border-radius: 20px !important;
+  background-image: linear-gradient(
+    to right,
+    #f6d365 0%,
+    #fda085 51%,
+    #f6d365 100%
+  );
+}
+.gradientButton:hover {
+  background-position: right center;
+}

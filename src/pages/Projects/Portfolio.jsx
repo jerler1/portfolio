@@ -12,6 +12,7 @@ const Portfolio = () => {
         <h1 className="has-text-centered is-size-3 my-4 portfolioHeader">
           My Recent Work
         </h1>
+        <h2 className="has-text-centered is-size-4">Work In Progress - Transistions</h2>
       </header>
       <div className="columns is-flex is-multiline gridContainer m-0 has-text-center">
         {works.map((project) => {
@@ -24,11 +25,11 @@ const Portfolio = () => {
                   key={project.id}
                   className="projectImage"
                 />
-                <figcaption className="is-size-4 is-size-3-mobile is-size-3-tablet">
+                <figcaption className="transistion is-size-4 is-size-3-mobile is-size-3-tablet">
                   {project.name}
                 </figcaption>
-                <button className="gitHub button">GitHub</button>
-                <button className="liveSite button">Live Site</button>
+                <button className="gitHub button transistion">GitHub</button>
+                <button className="liveSite button transistion">Live Site</button>
                 <div className="overlay"></div>
               </figure>
             </div>

@@ -49,7 +49,7 @@ const Contact = () => {
       <CardHeader headingName="Contact" />
       <div className="columns">
         <div className="column"></div>
-        <div className="column is-two-thirds">
+        <div className="column is-half">
           <div className="ContactForm m-6">
             <form
               id="contact-form"
@@ -102,9 +102,6 @@ const Contact = () => {
                       />
                       <span className="icon is-small is-left">
                         <i className="fas fa-envelope"></i>
-                      </span>
-                      <span className="icon is-small is-right">
-                        <i className="fas fa-check"></i>
                       </span>
                     </p>
                     {errors.email && (
@@ -172,7 +169,7 @@ const Contact = () => {
                 <div className="field-body">
                   <div className="field">
                     <div className="control">
-                      <button className="button is-primary" type="submit">
+                      <button className="button gradientButton" type="submit">
                         Send message
                       </button>
                     </div>

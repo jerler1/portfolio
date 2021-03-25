@@ -5,16 +5,17 @@
 }
 .gradientButton {
   text-transform: uppercase;
-  color: white;
+  color: rgb(244, 243, 251) !important;
+  padding: 20px !important;
   transition: 0.5s;
   background-size: 200% auto;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35) !important;
   border-radius: 20px !important;
   background-image: linear-gradient(
     to right,
-    #f6d365 0%,
-    #fda085 51%,
-    #f6d365 100%
+    #0e90a7 0%,
+    #0c238d 51%,
+    #913060 100%
   );
 }
 .gradientButton:hover {

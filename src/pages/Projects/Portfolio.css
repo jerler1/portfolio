@@ -1,24 +1,84 @@
 .gridContainer {
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .gridContainer .column figure img {
-    border-radius: 15px;
-    border: 1px black solid;
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+  position: relative;
+  border-radius: 15px;
+  border: 1px black solid;
+  z-index: 4;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .gridContainer .column figcaption {
-    text-align: center;
-    font-family: 'Merriweather', serif !important;
-    font-weight: 900;
+  text-align: center;
+  color: white;
+  position: absolute;
+  text-align: center !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  font-family: "Merriweather", serif !important;
+  font-weight: 900;
+}
+
+.gridContainer .column figure .gitHub {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  z-index: 5;
+}
+.gridContainer .column figure .liveSite {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  z-index: 5;
 }
 
 .portfolioHeader {
-    font-weight: 900;
+  font-weight: 900;
+}
+
+.gridContainer .column figure {
+  position: relative;
+}
+
+.gridContainer .column figure .overlay {
+  background-color: #141c3a;
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border-radius: 20px;
+  border-color: black;
+}
+.gradientButton {
+  text-transform: uppercase;
+  color: white;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35) !important;
+  border-radius: 20px !important;
+  background-image: linear-gradient(
+    to right,
+    #f6d365 0%,
+    #fda085 51%,
+    #f6d365 100%
+  );
+}
+.gradientButton:hover {
+  background-position: right center;
 }

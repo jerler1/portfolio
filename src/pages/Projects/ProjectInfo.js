@@ -1,6 +1,6 @@
 module.exports = [
   {
-    name: "Thrift Shop's Shop",
+    title: "Thrift Shop's Shop",
     description: "This is a React built application powered by a express server. This is a storefront application that uses many of the features that we have come to expect: cart, checkouts, easy navigation.",
     url: "https://thawing-everglades-67828.herokuapp.com/",
     github: "https://github.com/jerler1/Thriftshop",
@@ -9,7 +9,7 @@ module.exports = [
     id: "1",
   },
   {
-    name: "Cobalt Canvas",
+    title: "Cobalt Canvas",
     description:
       "A full-stack application where users can connect with other users to collaboratively make art projects. This app used Canvas Web API with an express server and MySQL database.  Sequelize was the ORM and handlebars handled the views",
     url: "https://cobalt-canvas.herokuapp.com/",
@@ -19,7 +19,7 @@ module.exports = [
     id: "2",
   },
   {
-    name: "Picky: the Recipe Finder",
+    title: "Picky: the Recipe Finder",
     description:
       "This app was designed to help busy people find recipes quickly while still being mindful of allergies and diet preferences, and allowing them the access to email themselves ingredients required.",
     url: "https://www.castaldi.dev/project1-picky/",
@@ -29,7 +29,7 @@ module.exports = [
     id: "3",
   },
   {
-    name: "React Employee Directory ",
+    title: "React Employee Directory ",
     description:
       "This application is an employee directory built with React using class components. The user has the ability to sort by clicking the heading of the column and filtering their search using the searchbar.",
     url: "https://jerler1.github.io/Employee-Directory/",
@@ -39,17 +39,17 @@ module.exports = [
     id: "4",
   },
   {
-    name: "WeatherSearch Dashboard ",
+    title: "WeatherSearch Dashboard ",
     description:
       "An application designed to obtain the current and 5 day weather forecast for an city using the Open Weather API. Weather Dashboard uses jQuery and local storage.",
     url: "https://jerler1.github.io/WeatherSearch/",
     github: "https://github.com/jerler1/WeatherSearch",
     image: require("../../assets/images/weather.png").default,
     alt: "Weather Dashboard.",
-    id: "45",
+    id: "5",
   },
   {
-    name: "Employee Roster",
+    title: "Employee Roster",
     description:
       "Node CLI that takes in information about employees and generates a chart that displays the employee's information.",
     url:
@@ -61,7 +61,7 @@ module.exports = [
   },
 
   {
-    name: "Day Planner",
+    title: "Day Planner",
     description:
       "Day Planner allows you to keep notes to help keep your busy schedule.  Uses Day.js and jquery.",
     url: "https://jerler1.github.io/dayplanner/",

@@ -16,8 +16,7 @@ const Portfolio = () => {
   }, []);
 
   const handleReveal = (event) => {
-    console.log(projectList);
-    console.log("Reveal");
+    console.log(event.target);
   };
   const handleHiding = (event) => {
     console.log("leaving");
@@ -38,6 +37,7 @@ const Portfolio = () => {
         {works.map((project) => {
           return (
             <Project
+              key={project.id}
               {...project}
               handleHiding={handleHiding}
               handleReveal={handleReveal}

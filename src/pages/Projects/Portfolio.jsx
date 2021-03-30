@@ -7,11 +7,12 @@ import CardHeader from "../../components/CardHeader/CardHeader";
 
 const Portfolio = () => {
   const [isShown, setIsShown] = useState(false);
-  const [projectList, setProjectList] = useState({});
+  const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
     works.map((project) => {
-      setProjectList({ key: project.id, isShown: false });
+      const objectToAdd = {"title": project.title, "isShown": false}
+      setProjectList([...projectList, objectToAdd]);
     });
   }, []);
 

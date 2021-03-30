@@ -9,7 +9,7 @@ import CardHeader from "../../components/CardHeader/CardHeader";
 const Contact = () => {
   const { register, errors, handleSubmit, reset } = useForm();
 
-  init("user_LGZm9i6U1A9er0Nmm9DWo");
+  init(process.env.REACT_APP_USER_ID);
 
   const toastifySuccess = () => {
     toast.success("Form sent!", {
@@ -34,8 +34,8 @@ const Contact = () => {
       };
 
       await emailjs.send(
-        "service_cf1btnh",
-        "template_2d8vzku",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
       );
       reset();

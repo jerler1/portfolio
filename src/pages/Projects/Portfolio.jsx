@@ -1,5 +1,4 @@
 import React from "react";
-import Projects from "../../components/Projects/Projects";
 import works from "./ProjectInfo";
 import "./Portfolio.css";
 import CardHeader from "../../components/CardHeader/CardHeader";

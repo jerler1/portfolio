@@ -14,3 +14,4 @@ export const header = require("./images/header.jpg").default
 export const headShot = require("./images/headShot.png").default
 export const Picky = require("./images/Picky.png").default
 export const weather = require("./images/weather.png").default
+export const ThriftShop = require("./images/ThriftShop.png").default

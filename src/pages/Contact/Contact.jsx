@@ -183,7 +183,6 @@ const Contact = () => {
         <div className="column"></div>
       </div>
       <ToastContainer/>
-      );
     </>
   );
 };

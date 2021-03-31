@@ -39,9 +39,6 @@ const Portfolio = () => {
         <h1 className="has-text-centered is-size-3 my-4 portfolioHeader">
           My Recent Work
         </h1>
-        <h2 className="has-text-centered is-size-4">
-          Work In Progress - Transitions
-        </h2>
       </header>
       <div className="columns is-flex is-multiline gridContainer m-0 has-text-center">
         {projectList.map((project) => {

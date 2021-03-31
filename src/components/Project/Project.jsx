@@ -33,14 +33,17 @@ const Project = ({
           <p className="animatedDescription">{description}</p>
         </Zoom>
         <LightSpeed left when={value ? true : false}>
-          <a href={github} target="_blank" className="gitHub button">GitHub</a>
+          <a href={github} target="_blank" className="gitHub button">
+            GitHub
+          </a>
         </LightSpeed>
         <LightSpeed right when={value ? true : false}>
-          <a href={url} target="_blank" className="liveSite button">Live Site</a>
+          <a href={url} target="_blank" className="liveSite button">
+            Live Site
+          </a>
         </LightSpeed>
-        <Tada when={value ? true : false}>
-          <div className={value ? "overlay" : ""}></div>
-        </Tada>
+
+        <div className={value ? "overlay" : ""}></div>
       </figure>
     </div>
   );

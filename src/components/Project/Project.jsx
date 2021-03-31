@@ -1,14 +1,18 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Tada from "react-reveal/Tada";
+import LightSpeed from "react-reveal/LightSpeed";
 import "./Project.css";
 
 const Project = ({
   title,
   image,
   alt,
+  description,
+  github,
+  url,
   handleReveal,
   handleHiding,
-  name,
   value,
 }) => {
   return (
@@ -17,17 +21,26 @@ const Project = ({
         onMouseEnter={handleReveal}
         onMouseLeave={handleHiding}
         name={title}
+        className="figureWrapper"
       >
         <img value={value} src={image} alt={alt} className="projectImage" />
-        <Fade top when={value ? true : false}>
+        <Zoom left when={value ? true : false}>
           <figcaption className="is-size-4 is-size-3-mobile is-size-3-tablet">
-            {name}
+            {title}
           </figcaption>
-        </Fade>
-
-        <button className="gitHub button">GitHub</button>
-        <button className="liveSite button">Live Site</button>
-        <div className="overlay"></div>
+        </Zoom>
+        <Zoom bottom when={value ? true : false}>
+          <p className="animatedDescription">{description}</p>
+        </Zoom>
+        <LightSpeed left when={value ? true : false}>
+          <a className="gitHub button">GitHub</a>
+        </LightSpeed>
+        <LightSpeed right when={value ? true : false}>
+          <a className="liveSite button">Live Site</a>
+        </LightSpeed>
+        <Tada when={value ? true : false}>
+          <div className={value ? "overlay" : ""}></div>
+        </Tada>
       </figure>
     </div>
   );

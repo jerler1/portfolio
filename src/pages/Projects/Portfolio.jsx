@@ -27,11 +27,7 @@ const Portfolio = () => {
   };
   const handleHiding = (event) => {
     const hidden = projectList.map((project) => {
-      if (event.currentTarget.getAttribute("name") === project.title) {
         return { ...project, isShown: false };
-      } else {
-        return project;
-      }
     });
     setProjectList(hidden);
   };

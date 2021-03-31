@@ -6,21 +6,34 @@ import "./Portfolio.css";
 import CardHeader from "../../components/CardHeader/CardHeader";
 
 const Portfolio = () => {
-  const [isShown, setIsShown] = useState(false);
   const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
-    works.map((project) => {
-      const objectToAdd = {"title": project.title, "isShown": false}
-      setProjectList([...projectList, objectToAdd]);
+    const newWorks = works.map((project) => {
+      return { ...project, isShown: false };
     });
-  }, []);
+    setProjectList(newWorks);
+  }, [works]);
 
   const handleReveal = (event) => {
-    console.log(event.target);
+    const revealed = projectList.map((project) => {
+      if (event.currentTarget.getAttribute("name") === project.title) {
+        return { ...project, isShown: true };
+      } else {
+        return project;
+      }
+    });
+    setProjectList(revealed);
   };
   const handleHiding = (event) => {
-    console.log("leaving");
+    const hidden = projectList.map((project) => {
+      if (event.currentTarget.getAttribute("name") === project.title) {
+        return { ...project, isShown: false };
+      } else {
+        return project;
+      }
+    });
+    setProjectList(hidden);
   };
 
   return (
@@ -35,9 +48,10 @@ const Portfolio = () => {
         </h2>
       </header>
       <div className="columns is-flex is-multiline gridContainer m-0 has-text-center">
-        {works.map((project) => {
+        {projectList.map((project) => {
           return (
             <Project
+              value={project.isShown}
               key={project.id}
               {...project}
               handleHiding={handleHiding}

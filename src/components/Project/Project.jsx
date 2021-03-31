@@ -36,7 +36,7 @@ const Project = ({
           <a href={github} target="_blank" className="gitHub button">GitHub</a>
         </LightSpeed>
         <LightSpeed right when={value ? true : false}>
-          <a className="liveSite button">Live Site</a>
+          <a href={url} target="_blank" className="liveSite button">Live Site</a>
         </LightSpeed>
         <Tada when={value ? true : false}>
           <div className={value ? "overlay" : ""}></div>

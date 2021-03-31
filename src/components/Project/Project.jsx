@@ -29,11 +29,11 @@ const Project = ({
             {title}
           </figcaption>
         </Zoom>
-        <Zoom bottom when={value ? true : false}>
+        <Zoom bottom when={value ? true : false} delay={400}>
           <p className="animatedDescription">{description}</p>
         </Zoom>
         <LightSpeed left when={value ? true : false}>
-          <a className="gitHub button">GitHub</a>
+          <a href={github} target="_blank" className="gitHub button">GitHub</a>
         </LightSpeed>
         <LightSpeed right when={value ? true : false}>
           <a className="liveSite button">Live Site</a>

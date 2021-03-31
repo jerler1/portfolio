@@ -24,7 +24,7 @@
   top: 10%;
   left: 0;
   right: 0;
-  font-family: "Merriweather", serif !important;
+  font-family: "Merriweather", serif;
   font-weight: 900;
   opacity: 1;
   transition: 0.45s ease-in-out;
@@ -33,6 +33,11 @@
 
 .gridContainer .column figure .gitHub {
   position: absolute;
+  background: none;
+  border: 2px solid white !important;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 1.5px;
   bottom: 10%;
   left: 15%;
   opacity: 1;
@@ -79,7 +84,10 @@
   position: absolute;
   color: white;
   text-align: center;
-  top: 30%;
+  font-family: "OpenSans-Light", sans-serif;
+  padding: 5px;
+  letter-spacing: 1.0px;
+  top: 28%;
   left: 0;
   right: 0;
   z-index: 9;

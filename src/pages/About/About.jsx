@@ -43,7 +43,7 @@ const About = () => {
             })}
           </div>
           <div>
-            <a href="https://docs.google.com/document/d/1llMQh5vKqQYlBCTGLZijvXcwloHyfJCT/edit" target="_blank" className="button mt-3 resumeButton">
+            <a href="https://docs.google.com/document/d/1llMQh5vKqQYlBCTGLZijvXcwloHyfJCT/" target="_blank" className="button mt-3 resumeButton">
               <span>Download Resume</span>
               <span>
               <i className="fas fa-file-export"></i>

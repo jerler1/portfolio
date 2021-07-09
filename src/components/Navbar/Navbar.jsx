@@ -47,7 +47,7 @@ const Navbar = (props) => {
                   : "navbar-item"
               }
             >
-              <a href="https://docs.google.com/document/d/1llMQh5vKqQYlBCTGLZijvXcwloHyfJCT/edit" target="_blank" rel="noreferrer">Resume</a>
+              <a href="https://docs.google.com/document/d/1llMQh5vKqQYlBCTGLZijvXcwloHyfJCT/" target="_blank" rel="noreferrer">Resume</a>
             </li>
             <li
               className={

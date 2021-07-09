@@ -1,7 +1,6 @@
 import React from "react";
 import Photo from "../../components/Photo/Photo";
 import CardHeader from "../../components/CardHeader/CardHeader";
-import resume from "../../assets/Main_Resume.pdf";
 import skills from "./skills";
 import "./About.css";
 
@@ -44,7 +43,7 @@ const About = () => {
             })}
           </div>
           <div>
-            <a href={resume} target="_blank" className="button mt-3 resumeButton">
+            <a href="https://docs.google.com/document/d/1llMQh5vKqQYlBCTGLZijvXcwloHyfJCT/edit" target="_blank" className="button mt-3 resumeButton">
               <span>Download Resume</span>
               <span>
               <i className="fas fa-file-export"></i>

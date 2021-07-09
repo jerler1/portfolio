@@ -36,7 +36,7 @@ const Contact = () => {
       await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
+        templateParams
       );
       reset();
       toastifySuccess();
@@ -182,7 +182,7 @@ const Contact = () => {
         </div>
         <div className="column"></div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </>
   );
 };
